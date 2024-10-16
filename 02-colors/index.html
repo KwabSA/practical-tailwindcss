@@ -7,26 +7,76 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Colors</title>
   </head>
-  <body>
+  <body class="p-2">
     <!-- Default colors -->
     <!-- white, black, red, green, blue, orange, yellow, purple, lime, emerald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber,  -->
 
     <!-- Text Colors -->
+    <p class="text-black">Tailwind Text Colors</p>
+    <p class="text-white">Tailwind Text Colors</p>
+    <p class="text-slate-300">Tailwind Text Colors</p>
+    <p class="text-red-400">Tailwind Text Colors</p>
+    <p class="text-emerald-500">Tailwind Text Colors</p>
+    <p class="text-zinc-400">Tailwind Text Colors</p>
 
     <!-- Background Colors -->
+    <p class="bg-black text-white">Tailwind Text Colors</p>
+    <p class="bg-white">Tailwind Text Colors</p>
+    <p class="bg-slate-300">Tailwind Text Colors</p>
+    <p class="bg-red-400">Tailwind Text Colors</p>
+    <p class="bg-emerald-500">Tailwind Text Colors</p>
+    <p class="bg-blue-400">Tailwind Text Colors</p>
 
     <!-- Text Underline -->
+    <p class="underline decoration">Tailwind Text Colors</p>
+    <p class="underline decoration-red-500">Tailwind Text Colors</p>
+    <p class="underline decoration-blue-800">Tailwind Text Colors</p>
+    <p class="underline decoration-yellow-300">Tailwind Text Colors</p>
 
     <!-- Border Colors -->
+    <div class="space-y-2">
+      <input type="text" class="border border-blue-400 p-1" />
+      <input type="text" class="border border-green-800 p-1" />
+      <input type="text" class="border border-indigo-400 p-1" />
+      <input type="text" class="border border-slate-400 p-1" />
+    </div>
 
     <!-- Divide Colors -->
+    <div class="divide-y divide-blue-900">
+      <div>Item Division 1</div>
+      <div>Item Division 2</div>
+      <div>Item Division 3</div>
+      <div>Item Division 4</div>
+      <div>Item Division 5</div>
+    </div>
 
     <!-- Outline Colors -->
+    <div class="space-x-2">
+      <button class="px-2 rounded-full outline outline-red-600">Greet</button>
+      <button class="px-2 rounded-full outline outline-blue-600">Greet</button>
+      <button class="px-2 rounded-full outline outline-gold-600">Greet</button>
+      <button class="px-2 rounded-full outline outline-green-600">Greet</button>
+    </div>
 
     <!-- Box Shadow Colors (Opacity defaults to 100, but you can set it)-->
+    <button
+      class="my-4 px-2 rounded-full shadow-lg bg-blue-300 shadow-slate-400"
+    >
+      Subscribe
+    </button>
+    <button
+      class="my-4 px-4 rounded-full shadow-lg bg-purple-500 shadow-blue-900/60 text-white font-bold"
+    >
+      ePAY
+    </button>
 
     <!-- Accent Colors -->
+    <input type="checkbox" class="accent-purple-500" checked /> Purple
+    <input type="checkbox" class="accent-blue-500" checked /> Blue
 
     <!-- Arbitrary Colors -->
+    <div class="bg-[#320fab] px-2 text-white">A Colors</div>
+    <div class="bg-[rgb(255,124,150)] text-white px-2">A Colors</div>
+    <div class="bg-[skyblue] px-2 text-white">A Colors</div>
   </body>
 </html>
