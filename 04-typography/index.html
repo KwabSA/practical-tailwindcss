@@ -4,27 +4,115 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["ui-sans-serif", "system-ui"],
+            serif: ["Tapestry", "ui-serif", "Georgia"],
+            mono: ["ui-monospace", "SFMono-Regular"],
+          },
+        },
+      };
+    </script>
     <title>Typography</title>
   </head>
   <body>
     <!-- Font Family -->
+    <div class="bg-slate-200 pl-4">
+      <div class="font-sans">Font Sans</div>
+      <div class="font-serif">Font Tapestry</div>
+      <div class="font-mono">Font Mono</div>
+    </div>
 
     <!-- Font Size -->
+    <div class="my-2 p-2 bg-blue-100">
+      <div class="text-xs">Extra small font size</div>
+      <div class="text-sm">Small font size</div>
+      <div class="text-base">Base font size</div>
+      <div class="text-lg">Large font size</div>
+      <div class="text-2xl">Double extra large font size</div>
+      <div class="text-3xl">Tripple extra large font size</div>
+      <div class="text-9xl">Max 9x extra large font size</div>
+    </div>
 
     <!-- Font Weight -->
+    <div class="bg-slate-100 p-2">
+      <div class="font-extralight">Font Extra Light Weight</div>
+      <div class="font-light">Font Light Weight</div>
+      <div class="font-normal">Font Normal Weight</div>
+      <div class="font-medium">Font Medium Weight</div>
+      <div class="font-semibold">Font Semibold Weight</div>
+      <div class="font-bold">Font bold Weight</div>
+    </div>
 
     <!-- Letter Spacing -->
+    <div class="bg-blue-100 p-2 my-2">
+      <div class="tracking-tight">Tight letter spacing</div>
+      <div class="tracking-normal">Normal letter spacing</div>
+      <div class="tracking-wide">Wide letter spacing</div>
+      <div class="tracking-widest">Widest letter spacing</div>
+    </div>
 
     <!-- Text Alignment -->
+    <div class="bg-slate-100 my-2 p-2">
+      <div class="text-left">Left Text Alignment</div>
+      <div class="text-center">Center Text Alignment</div>
+      <div class="text-right">Right Text Alignment</div>
+      <div class="text-justify">
+        Justify Justify Justify Justify Justify Justify Justify Justify Justify
+        Justify Justify Justify Justify Text Alignment
+      </div>
+    </div>
 
     <!-- Text Decoration -->
+    <div class="bg-blue-100 my-2 p-2">
+      <div class="underline decoration">Text Underline</div>
+      <div class="underline decoration underline-offset-4">
+        Offset Text Underline
+      </div>
+      <div
+        class="underline decoration decoration-yellow-300 underline-offset-4"
+      >
+        Coloured Offset Text Underline
+      </div>
+      <div
+        class="underline decoration-4 decoration-blue-500 underline-offset-4"
+      >
+        Thick Coloured Offset Text Underline
+      </div>
+    </div>
 
     <!-- Decoration Style -->
-
+    <div class="bg-slate-100 my-2 p-2">
+      <div class="underline decoration-double">Double Text Underline</div>
+      <div class="underline decoration-dotted underline-offset-4">
+        Dotted Offset Text Underline
+      </div>
+      <div
+        class="underline decoration-dashed decoration-purple-600 underline-offset-4"
+      >
+        Dashed Coloured Offset Text Underline
+      </div>
+      <div
+        class="underline decoration-wavy decoration-red-500 underline-offset-4"
+      >
+        Wavy Coloured Offset Text Underline
+      </div>
+    </div>
     <!-- Decoration Offset -->
 
     <!-- Text Transform -->
+    <div class="bg-blue-100 ny-2 p-2">
+      <div class="normal-case">Normal case text</div>
+      <div class="uppercase">uppercase text</div>
+      <div class="capitalize">capitalized case text</div>
+    </div>
   </body>
 </html>
 
