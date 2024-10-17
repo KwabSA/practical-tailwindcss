@@ -9,26 +9,68 @@
   </head>
   <body>
     <!-- Width -->
+    <div class="bg-black text-white w-4">Hello, Width</div>
+    <div class="bg-black text-white w-auto">Hello, Auto Width</div>
+    <div class="bg-black text-white w-48">Hello, Width</div>
+    <div class="bg-black text-white w-96">Hello, Width</div>
 
     <!-- Percentages -->
+    <div class="bg-slate-100">
+      <div class="bg-blue-100 text-black w-1/4">Hello, 1/4th Width</div>
+      <div class="bg-blue-100 text-black w-1/3">Hello, 1/3rd Width</div>
+      <div class="bg-blue-100 text-black w-1/2">Hello, 1/2nd Width</div>
+    </div>
 
     <!-- Width of the viewport -->
-
-    <!-- 100% of container -->
-
-    <!-- min/max content -->
+    <div class="bg-lime-300 space-y-1 p-2">
+      <!-- min/max content -->
+      <div class="bg-black text-white w-min p-2">
+        Hello, Min Screen Viewport
+      </div>
+      <div class="bg-orange-600 text-white w-max p-2">
+        Hello, Max Screen Viewport
+      </div>
+      <div class="bg-purple-600 text-white w-fit p-2">
+        Hello, Fit Content Viewport
+      </div>
+      <!-- 100% of container -->
+      <div class="bg-black text-white w-screen p-2">
+        Hello, Full Screen Viewport
+      </div>
+      <div class="bg-blue-900 text-white w-full p-2">
+        Hello, Full Width Viewport
+      </div>
+    </div>
 
     <!-- Arbitrary width -->
-
+    <div class="bg-orange-300 p-2 space-y-1">
+      <div class="bg-blue-100 p-2 w-[300px]">Hi, Arbitrary Width</div>
+      <div class="bg-blue-100 p-2 max-w-fit mx-auto">
+        Hi, Arbitrary Width Hi, Arbitrary Width Hi, Arbitrary Width Hi,
+        Arbitrary Width
+      </div>
+    </div>
     <!-- Max Width -->
 
     <!-- Height (Most of the same options as widths) -->
-
+    <div class="bg-lime-300 text-white font-bold my-2 flex items-end">
+      <div class="bg-orange-500 p-2 w-20 h-16">Hiya!</div>
+      <div class="bg-orange-500 p-2 w-20 h-24">Hiya!</div>
+      <div class="bg-orange-500 p-2 w-20 h-32">Hiya!</div>
+      <div class="bg-orange-500 p-2 w-20 h-40">Hiya!</div>
+      <div class="bg-orange-500 p-2 w-20 h-48">Hiya!</div>
+      <div class="bg-orange-500 p-2 w-20 h-56">Hiya!</div>
+    </div>
     <!-- Min Height -->
 
     <!-- Max Height -->
 
     <!-- Full screen height -->
+    <div class="bg-blue-300 h-screen p-2 text-center">
+      <div class="mx-auto mt-40 text-white text-8xl font-bold">
+        Hero Section
+      </div>
+    </div>
   </body>
 </html>
 
