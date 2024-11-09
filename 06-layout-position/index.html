@@ -5,32 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>TailwindCSS</title>
+    <title>TailwindCSS - Layout Positioning</title>
   </head>
-  <body>
+  <body class="bg-slate-100">
     <!-- Positioning -->
+    <div class="relative bg-red-200 w-1/2 h-12">
+      <p>Parent Relative Element</p>
+      <div class="absolute bottom-0 right-0 bg-red-500">
+        <p class="px-2">Absolute Child Element</p>
+      </div>
+    </div>
 
     <!-- Top left corner -->
-
+    <div class="relative h-32 w-32 bg-yellow-100 mt-2">
+      <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
     <!-- Top right corner -->
-
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
     <!-- Bottom left corner -->
-
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute bottom-0 left-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
     <!-- Bottom right corner -->
-
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute bottom-0 right-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
     <!-- Span top edge -->
-
+    <div class="relative h-32 bg-yellow-100 w-32">
+      <div class="absolute inset-x-0 top-0 h-16 bg-yellow-300"></div>
+    </div>
     <!-- Span left edge -->
-
+    <div class="relative bg-yellow-100 h-32 w-32">
+      <div class="absolute inset-y-0 left-0 w-16 bg-yellow-300"></div>
+    </div>
     <!-- Span right edge -->
-
+    <div class="relative bg-yellow-100 h-32 w-32">
+      <div class="absolute inset-y-0 right-0 w-16 bg-yellow-300"></div>
+    </div>
     <!-- Span bottom edge -->
-
+    <div class="relative bg-yellow-100 h-32 w-32">
+      <div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-300"></div>
+    </div>
     <!-- Display Classes -->
+    <div class="pl-2 py-4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+      <span class="inline font-bold">This is inline</span> culpa? Atque quas
+      alias minima nulla voluptatem eos reiciendis. Laboriosam
+      <span class="inline-block font-bold">This is inline block</span>
+      iusto officia eum saepe iste officiis nemo ut earum qui laborum? Nobis
+      error suscipit, quasi quam
+      <span class="block font-bold">This is block</span> dolore iusto nihil
+      ducimus eligendi. Quidem eius, autem maxime beatae inventore incidunt
+      quae, odio quis, <span class="hidden font-bold">Hidden Text</span> eaque
+      rem consequuntur officiis debitis cupiditate commodi facere saepe aperiam.
+    </div>
 
     <!-- Z-Index -->
+    <div class="relative h-36">
+      <div class="absolute w-24 h-24 font-bold left-10 bg-blue-200 z-10">
+        <span class="text-left">S1</span>
+        <span class="text-right pl-12">E1</span>
+      </div>
+      <div
+        class="absolute w-24 h-24 left-20 bg-orange-300 opacity-60 font-bold z-20"
+      >
+        <span class="text-left">S2</span>
+        <span class="text-right pl-8">E2</span>
+      </div>
+      <div
+        class="absolute w-24 h-24 left-40 bg-lime-400 opacity-60 font-bold z-30"
+      >
+        3
+      </div>
+      <div
+        class="absolute w-24 h-24 left-60 bg-teal-500 opacity-60 font-bold z-40"
+      >
+        4
+      </div>
+      <div
+        class="absolute w-24 h-24 left-80 bg-blue-600 opacity-60 font-bold z-50"
+      >
+        5
+      </div>
+    </div>
 
     <!-- Floats -->
+    <div class="w-full shadow-md mb-8 pb-2">
+      <img
+        src="../assets/img/img1.jpg"
+        alt="laptop"
+        class="h-56 w-56 h-24 w-24 float-left m-4 rounded-md"
+      />
+      <p class="m-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iusto
+        assumenda qui nemo, ab deserunt dicta optio nihil ipsam magnam maxime
+        doloremque cum quo nesciunt voluptatum ex modi. Accusantium alias iusto
+        a quam totam non, ex ad ullam dignissimos velit voluptatum deleniti,
+        minima voluptatibus laudantium harum ab nostrum! Nihil, labore!
+      </p>
+    </div>
+    <div class="w-full shadow-md mb-8 pb-2">
+      <img
+        src="../assets/img/img2.jpg"
+        alt="laptop"
+        class="h-56 w-56 h-24 w-24 float-right m-4 rounded-full"
+      />
+      <p class="m-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iusto
+        assumenda qui nemo, ab deserunt dicta optio nihil ipsam magnam maxime
+        doloremque cum quo nesciunt voluptatum ex modi. Accusantium alias iusto
+        a quam totam non, ex ad ullam dignissimos velit voluptatum deleniti,
+        minima voluptatibus laudantium harum ab nostrum! Nihil, labore!
+      </p>
+    </div>
+    <div class="w-full shadow-md mb-8 pb-2">
+      <img
+        src="../assets/img/img3.jpg"
+        alt="laptop"
+        class="h-56 w-56 h-24 w-24 float-left m-4 rounded-lg"
+      />
+      <p class="m-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iusto
+        assumenda qui nemo, ab deserunt dicta optio nihil ipsam magnam maxime
+        doloremque cum quo nesciunt voluptatum ex modi. Accusantium alias iusto
+        a quam totam non, ex ad ullam dignissimos velit voluptatum deleniti,
+        minima voluptatibus laudantium harum ab nostrum! Nihil, labore!
+      </p>
+    </div>
   </body>
 </html>
 
